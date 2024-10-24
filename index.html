@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabs</title>
+</head>
+
+<body>
+    
+    <div class="tabs-container">
+        <div class="tabs">
+            <button class="tab-link active" data-tab="tab1">Tab 1</button>
+            <button class="tab-link" data-tab="tab2">Tab 2</button>
+            <button class="tab-link" data-tab="tab3">Tab 3</button>
+        </div>
+        
+        <div class="tab-content-container">
+            <div class="tab-content" data-content="tab1">
+                <h2>Tab1 Lorem.</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt repudiandae placeat rerum!</p>
+            </div>
+            <div class="tab-content" data-content="tab2" hidden>
+                <h2>Tab2 Lorem, ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="tab-content" data-content="tab3" hidden>
+                <h2>Tab3 Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita unde, blanditiis molestiae nobis natus dolores quia qui odio!</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>

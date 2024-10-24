@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.tabs-container {
+    width: 400px;
+}
+
+.tabs {
+    margin-bottom: 10px;
+}
+
+.tab-link {
+    padding: 10px 15px;
+    border-radius: 7px;
+    background-color: transparent;
+    color: black;
+    transition: .5s ease;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.tab-link.active {
+    background-color: black;
+    color: white;
+}
+
+.tab-content {
+    min-height: 90px;
+    animation: moving .5s ease;
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.tab-content h2 {
+    margin-bottom: 5px;
+}
